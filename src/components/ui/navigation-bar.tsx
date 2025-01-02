@@ -11,6 +11,7 @@ import {
 
 export default function NavigationBar() {
   return (
+  <div className="bg-slate-500">
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -21,5 +22,6 @@ export default function NavigationBar() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
+  </div>
   );
 }

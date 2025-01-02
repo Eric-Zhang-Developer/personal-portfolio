@@ -1,4 +1,5 @@
 import './globals.css'
+import NavigationBar from '@/components/ui/navigation-bar'
 
 export const metadata = {
   title: 'Next.js',
@@ -12,6 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <header><NavigationBar></NavigationBar></header>
       <body>{children}</body>
     </html>
   )
