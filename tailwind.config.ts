@@ -8,10 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Using global colors for better maintainability 
       colors: {
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        accent: 'var(--accent)',
+        primary: '#1e293b',
+        secondary: '#334155',
+        accent: '#3b82f6',
       }
     },
   },

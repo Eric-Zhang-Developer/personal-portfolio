@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <section>
         {skills.map((skill) =>
           (
-            <p key={skill}>{skill}</p>
+            <p key={skill} className="text-accent bg-accent bg-opacity-50">{skill}</p>
           )
         )}
       </section>
