@@ -2,13 +2,13 @@ import { Project } from "@/types/project";
 import ProjectCard from "@/components/core/project-card";
 
 // Decided to use a an array of projects as it centralizes and organizes my projects in 
-// one spot vs all over the place in the tsx. 
+// one spot vs all over the place in the tsx. This makes adding new projects much easier.
 
 const projects: Project[] = [
   {
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
-    imagePath: "n/a",
+    imagePath: "/project-icons/personal-portfolio.png",
     skills: ["React", "TypeScript", "Tailwind", "Next.js"],
   },
 ];
