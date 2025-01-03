@@ -9,8 +9,10 @@ const projects: Project[] = [
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
     imagePath: "/project-icons/personal-portfolio.png",
-    skills: ["React", "TypeScript", "Tailwind", "Next.js"],
+    link: "/projects/personal-portfolio",
+    skills: ["React", "TypeScript", "Tailwind", "Next.js"]
   },
+
 ];
 
 export default function Projects() {

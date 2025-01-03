@@ -1,6 +1,7 @@
 // Decided to make a seperate project card component here as this code is being reused a lot
 // Makes it very simple to add a new project
 
+import Link from "next/link"
 import { Project } from "@/types/project";
 import Image from "next/image";
 
@@ -9,9 +10,10 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { title, description, imagePath, skills } = project;
+  const { title, description, imagePath, skills, link } = project;
   return (
-    <main
+    <Link
+      href={link}
       className="flex flex-col items-center border-4 p-4 hover:cursor-pointer
     gap-2 border-primary rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg
     bg-gradient-to-br from-slate-300 to-accent"
@@ -26,6 +28,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </span>
         ))}
       </section>
-    </main>
+    </Link>
   );
 }

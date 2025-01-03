@@ -3,4 +3,5 @@ export interface Project {
   description: string;
   imagePath: string;
   skills: string[];
+  link: string;
 }
