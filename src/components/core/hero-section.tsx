@@ -1,10 +1,7 @@
-
-export default function HeroSection (){
+export default function HeroSection() {
   return (
-    <>
-      <h1>Hi, I'm Eric Zhang</h1>
-    </>
-
-  )
+    <div>
+      Hi, I'm Eric Zhang
+    </div>
+  );
 }
-

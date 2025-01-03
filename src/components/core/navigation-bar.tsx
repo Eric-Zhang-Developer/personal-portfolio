@@ -13,39 +13,28 @@ import {
 
 export default function NavigationBar() {
   return (
-    <div className="bg-slate-500">
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink>
-                Home
-              </NavigationMenuLink>
+    <nav className="bg-slate-800 text-white">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo/Home */}
+          <Link href="/" className="text-xl font-bold hover:text-slate-300 transition-colors">
+            EZ
+          </Link>
+
+          {/* Navigation Links */}
+          <div className="flex space-x-8">
+            <Link href="/about" className="hover:text-slate-300 transition-colors">
+              About
             </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/about" legacyBehavior passHref>
-              <NavigationMenuLink>
-                About
-              </NavigationMenuLink>
+            <Link href="/projects" className="hover:text-slate-300 transition-colors">
+              Projects
             </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/projects" legacyBehavior passHref>
-              <NavigationMenuLink>
-                Projects
-              </NavigationMenuLink>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
+              Contact
             </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/contact" legacyBehavior passHref>
-              <NavigationMenuLink>
-                Contact
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-    </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
