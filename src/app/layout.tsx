@@ -4,6 +4,9 @@ import Footer from "@/components/core/footer";
 export const metadata = {
   title: "Eric Zhang",
   description: "Eric Zhang's Personal Portfolio",
+  icons: {
+    icon: '/favicon.png'
+  }
 };
 
 export default function RootLayout({
