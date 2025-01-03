@@ -1,32 +1,31 @@
 // Decided to make a seperate project card component here as this code is being reused a lot
 // Makes it very simple to add a new project
 
-import {Project} from "@/types/project"
-import Image from "next/image"
+import { Project } from "@/types/project";
+import Image from "next/image";
 
 type ProjectCardProps = {
   project: Project;
-}
+};
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { title, description, imagePath, skills} = project;
+  const { title, description, imagePath, skills } = project;
   return (
-    <main className="flex flex-col items-center border-2 p-2 border-primary rounded-xl">
-      <Image 
-        src={imagePath}
-        alt={title}
-        width={100}
-        height={100}
-      ></Image>
-      <h1 className="text-primary">{title}</h1>
-      <p className="text-secondary">{description}</p>
-      <section>
-        {skills.map((skill) =>
-          (
-            <p key={skill} className="text-accent bg-accent bg-opacity-50">{skill}</p>
-          )
-        )}
+    <main
+      className="flex flex-col items-center border-4 p-4 hover:cursor-pointer
+    gap-2 border-primary rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg
+    bg-gradient-to-br from-slate-300 to-accent"
+    >
+      <Image src={imagePath} alt={title} width={100} height={100}></Image>
+      <h1 className="text-primary text-3xl ">{title}</h1>
+      <p className="text-secondary text-lg">{description}</p>
+      <section className="flex flex-row flex-wrap justify-center">
+        {skills.map((skill) => (
+          <span className="px-3 py-1 text-s text-secondary bg-slate-100 rounded-full m-1 inline-block border-l-8 border-2 border-accent">
+            {skill}
+          </span>
+        ))}
       </section>
     </main>
-  ) 
+  );
 }
