@@ -9,11 +9,11 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode; 
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gradient-to-b from-slate-200 to-slate-400 h-screen">
         <header>
           <NavigationBar></NavigationBar>
         </header>
