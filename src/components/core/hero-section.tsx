@@ -28,7 +28,7 @@ export default function HeroSection() {
         alt='Eric Zhang'
         width={180}
         height={180}
-        className="rounded-full shadow-md"
+        className="rounded-full shadow-md border-2 border-slate-800 transition hover:border-blue-500 hover:shadow-lg hover:scale-105"
       >
 
       </Image>
