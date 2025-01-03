@@ -11,15 +11,15 @@ type ProjectCardProps = {
 export default function ProjectCard({ project }: ProjectCardProps) {
   const { title, description, imagePath, skills} = project;
   return (
-    <main className="flex flex-col items-center border-2 p-2 border-slate-800 rounded-xl">
+    <main className="flex flex-col items-center border-2 p-2 border-primary rounded-xl">
       <Image 
         src={imagePath}
         alt={title}
         width={100}
         height={100}
       ></Image>
-      <h1 className="text-slate-800">{title}</h1>
-      <p className="text-slate-700">{description}</p>
+      <h1 className="text-primary">{title}</h1>
+      <p className="text-secondary">{description}</p>
       <section>
         {skills.map((skill) =>
           (

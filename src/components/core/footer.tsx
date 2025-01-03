@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="fixed bottom-0 bg-slate-800 w-full h-10 border-t border-black flex justify-center items-center">
+    <div className="fixed bottom-0 bg-primary w-full h-10 border-t border-black flex justify-center items-center">
       <p className="text-white text-sm mr-4">Copyright © 2025 Eric Zhang</p>
       <a
         href="https://github.com/Eric-Zhang-Developer"

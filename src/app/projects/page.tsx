@@ -16,7 +16,7 @@ const projects: Project[] = [
 export default function Projects() {
   return (
     <main className="flex flex-col container mx-auto px-4 justify-center items-center">
-      <h1 className="text-slate-800 text-4xl mt-6">My Projects</h1>
+      <h1 className="text-primary text-4xl mt-6">My Projects</h1>
       <section className="grid gap-2 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
