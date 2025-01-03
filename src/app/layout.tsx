@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-slate-200 to-slate-400 h-screen">
+      <body className="bg-gradient-to-b from-slate-200 to-slate-500 h-screen">
         <header>
           <NavigationBar></NavigationBar>
         </header>

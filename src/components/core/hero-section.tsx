@@ -1,8 +1,8 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function HeroSection() {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 mt-4">
+    <div className="flex flex-col justify-center items-center gap-6 mt-6">
       <h1 className="text-slate-800 text-4xl">Hi, I'm Eric Zhang</h1>
       <p className="text-slate-700 text-xl">
         Forging robust web applications with precision and purpose
@@ -22,6 +22,16 @@ export default function HeroSection() {
           Contact Me
         </Link>
       </div>
+
+      <Image
+        src='/avatar.png'
+        alt='Eric Zhang'
+        width={180}
+        height={180}
+        className="rounded-full shadow-md"
+      >
+
+      </Image>
     </div>
   );
 }
