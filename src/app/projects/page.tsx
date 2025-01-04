@@ -13,13 +13,61 @@ const projects: Project[] = [
     skills: ["React", "TypeScript", "Tailwind", "Next.js"]
   },
 
+  {
+    title: "Tail Tales Gallery",
+    description: "AI-generated Animal Artwork Gallery Showcasing Diverse Artistic Styles",
+    imagePath: "/project-icons/tail-tale-gallery.jpg",
+    link: "/projects/pakudex",
+    skills: ["React", "TypeScript", "Tailwind"]
+  },
+
+  {
+    title: "To-Do App",
+    description: "Simple To-Do List Built Using React",
+    imagePath: "/project-icons/to-do-list.png",
+    link: "/projects/to-do-app",
+    skills: ["React", "Javascript", "CSS"]
+  },
+
+  {
+    title: "Meme Calculator",
+    description: "Calculator with a Unique Twist",
+    imagePath: "/project-icons/meme-calculator.webp",
+    link: "/projects/meme-calculator",
+    skills: ["HTML", "CSS", "Javscript"]
+  },
+
+  {
+    title: "Youtube Clone",
+    description: "Pixel Perfect Copy of Youtube's UI",
+    imagePath: "/project-icons/youtube-clone.png",
+    link: "/projects/youtube-clone",
+    skills: ["HTML", "CSS", "Javscript"]
+  },
+
+  {
+    title: "Minesweeper",
+    description: "Enhanced Implementation of Classic Minesweeper",
+    imagePath: "/project-icons/minesweeper.png",
+    link: "/projects/minesweeper",
+    skills: ["C++", "SFML", "STL"]
+  },
+
+  {
+    title: "Pakudex",
+    description: "Pokémon-inspired Species Tracker",
+    imagePath: "/project-icons/pakudex.webp",
+    link: "/projects/pakudex",
+    skills: ["Python"]
+  },
+
 ];
 
 export default function Projects() {
   return (
     <main className="flex flex-col container mx-auto px-4 justify-center items-center">
       <h1 className="text-primary text-4xl mt-6">My Projects</h1>
-      <section className="grid gap-2 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
+      <section className="grid gap-4 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}

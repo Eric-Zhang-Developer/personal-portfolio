@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       <Image src={imagePath} alt={title} width={100} height={100}></Image>
       <h1 className="text-primary text-3xl ">{title}</h1>
-      <p className="text-secondary text-lg">{description}</p>
+      <p className="text-secondary text-lg text-center">{description}</p>
       <section className="flex flex-row flex-wrap justify-center">
         {skills.map((skill) => (
           <span className="px-3 py-1 text-s text-secondary bg-slate-100 rounded-full m-1 inline-block border-l-8 border-2 border-accent">
