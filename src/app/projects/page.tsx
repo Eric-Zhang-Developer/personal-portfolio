@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Tail Tales Gallery",
     description: "AI-generated Animal Artwork Gallery Showcasing Diverse Artistic Styles",
     imagePath: "/project-icons/tail-tale-gallery.jpg",
-    link: "/projects/pakudex",
+    link: "https://github.com/Eric-Zhang-Developer/Tail-Tale-Gallery",
     skills: ["React", "TypeScript", "Tailwind"]
   },
 
@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "To-Do App",
     description: "Simple To-Do List Built Using React",
     imagePath: "/project-icons/to-do-list.png",
-    link: "/projects/to-do-app",
+    link: "https://github.com/Eric-Zhang-Developer/To-Do-App",
     skills: ["React", "Javascript", "CSS"]
   },
 
@@ -33,7 +33,7 @@ const projects: Project[] = [
     title: "Meme Calculator",
     description: "Calculator with a Unique Twist",
     imagePath: "/project-icons/meme-calculator.webp",
-    link: "/projects/meme-calculator",
+    link: "https://github.com/Eric-Zhang-Developer/Web-Calculator",
     skills: ["HTML", "CSS", "Javscript"]
   },
 
@@ -41,7 +41,7 @@ const projects: Project[] = [
     title: "Youtube Clone",
     description: "Pixel Perfect Copy of Youtube's UI",
     imagePath: "/project-icons/youtube-clone.png",
-    link: "/projects/youtube-clone",
+    link: "https://github.com/Eric-Zhang-Developer/Youtube.com-Clone",
     skills: ["HTML", "CSS", "Javscript"]
   },
 
