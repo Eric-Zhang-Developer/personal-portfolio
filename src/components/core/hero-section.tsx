@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div className="flex flex-col justify-center items-center gap-6 mt-6">
-      <h1 className="text-primary text-5xl font-bold">Hi, I'm Eric Zhang</h1>
+      <h1 className="text-primary text-5xl font-bold">Hi, I&apos;m Eric Zhang</h1>
       <p className="text-secondary text-2xl">
         Forging robust web applications with precision and purpose
       </p>
