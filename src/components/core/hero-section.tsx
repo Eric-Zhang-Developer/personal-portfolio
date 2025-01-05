@@ -3,22 +3,22 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div className="flex flex-col justify-center items-center gap-6 mt-6 p-1">
-      <h1 className="text-primary text-5xl font-bold text-center">Hi, I&apos;m Eric Zhang</h1>
-      <p className="text-secondary text-2xl text-center">
+      <h1 className="text-primary text-5xl font-bold text-center">Hello, I&apos;m <span className="text-accent">Eric Zhang</span></h1>
+      <p className="text-secondary text-2xl text-center mb-8">
         Forging robust web applications with precision and purpose
       </p>
 
-      <div>
+      <div className="mb-8">
         <Link
           href="/projects"
           className="transform bg-primary text-white text-xl 
-          py-2 px-4 mr-4 rounded-lg shadow-md transition hover:shadow-xl hover:bg-accent"
+          py-3 px-5 mr-4 rounded-lg shadow-md transition hover:shadow-xl hover:bg-accent"
         >
           View Projects
         </Link>
         <Link
           href="/contact"
-          className="transform border-2 text-primary border-primary text-xl py-2 px-4 
+          className="transform border-2 text-primary border-primary text-xl py-3 px-5
           rounded-lg shadow-md transition hover:border-accent hover:text-accent hover:shadow-xl"
         >
           Contact Me
