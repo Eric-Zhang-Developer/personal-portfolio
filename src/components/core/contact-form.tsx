@@ -1,7 +1,13 @@
+// Using .npmrc with legacy-peer-deps=true for formspree as it has 
+// not been updated to React 19. Bandaid solution but potential 
+// issues should be minor in scope. 
+
+
 "use client";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Send } from "lucide-react";
+
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xkggpzbr");
