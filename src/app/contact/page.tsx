@@ -10,13 +10,15 @@ export default function Contact() {
           href="https://github.com/Eric-Zhang-Developer"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition hover:text-accent transform hover:scale-110 mr-6"
         >
-          <Github size={40} className="mr-6"/>
+          <Github size={40}/>
         </a>
         <a
           href="https://www.linkedin.com/in/eric-zhang-developer/"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition hover:text-accent transform hover:scale-110"
         >
           <Linkedin size={40} />
         </a>
