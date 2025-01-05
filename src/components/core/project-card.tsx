@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <p className="text-secondary text-lg text-center">{description}</p>
       <section className="flex flex-row flex-wrap justify-center">
         {skills.map((skill) => (
-          <span className="px-3 py-1 text-s text-secondary bg-slate-100 rounded-full m-1 inline-block border-l-8 border-2 border-accent">
+          <span key={skill} className="px-3 py-1 text-s text-secondary bg-slate-100 rounded-full m-1 inline-block border-l-8 border-2 border-accent">
             {skill}
           </span>
         ))}
