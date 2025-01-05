@@ -1,27 +1,47 @@
 "use client";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { Send } from "lucide-react";
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xkggpzbr");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p>Thanks for reaching out!</p>;
   }
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-2 container mx-auto items-center">
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" className="w-11/12"/>
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-2 container mx-auto items-center px-6"
+    >
+      <label htmlFor="email" className="text-xl self-start">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        className="w-full h-8 mb-2 shadow-lg rounded-md p-2"
+      />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label htmlFor="email">Message</label>
-      <textarea id="message" name="message" className="w-11/12"/>
+      <label htmlFor="email" className="text-xl self-start ">
+        Message
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        className="w-full h-96 shadow-lg rounded-md p-2"
+      />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
         type="submit"
         disabled={state.submitting}
-        className="transform bg-primary text-white text-xl w-2/4
-          py-2 px-4 mr-4 rounded-lg shadow-md transition hover:shadow-xl hover:bg-accent hover:scale-105"
+        className="transform bg-primary text-white text-2xl mt-6
+          py-3 px-4 mr-4 rounded-lg shadow-md flex justify-center items-center gap-2
+          transition hover:shadow-xl hover:bg-accent hover:scale-105
+          w-3/4 lg:w-2/4"
       >
-        Submit
+        <p>Send</p>
+        <Send></Send>
       </button>
     </form>
   );
