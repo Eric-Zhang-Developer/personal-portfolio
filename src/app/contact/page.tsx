@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
-    <main className="flex flex-col items-center gap-6 text-primary">
+    <section className="flex flex-col items-center gap-6 text-primary">
       <div className="flex gap-4 items-center mt-6">
         <p className="text-4xl font-medium">Contact Me</p>
         <Mail size={35}></Mail>
@@ -28,7 +28,7 @@ export default function Contact() {
           <Linkedin size={40} />
         </a>
       </section>
-    </main>
+    </section>
 
   );
 }

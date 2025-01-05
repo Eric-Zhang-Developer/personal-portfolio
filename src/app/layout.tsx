@@ -16,11 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-slate-200 to-slate-500 h-screen">
+      <body className="flex flex-col min-h-screen">
         <header>
           <NavigationBar></NavigationBar>
         </header>
-        {children}
+        <main className="flex-1 bg-gradient-to-b from-slate-200 to-slate-500 pt-16 pb-4">{children}</main>
         <footer>
           <Footer></Footer>
         </footer>
