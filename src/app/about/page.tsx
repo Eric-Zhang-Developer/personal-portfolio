@@ -1,7 +1,8 @@
 export default function About() {
   return (
     <>
-      <section className="flex flex-col container mx-auto items-center text-primary">
+      {/* Intro to about me page */}
+      <section className="flex flex-col container mx-auto items-center text-primary min-h-screen">
         <h1 className="text-4xl mt-6">About Me</h1>
         <p className="mt-2 text-secondary text-lg text-center p-4 lg:p-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
@@ -16,6 +17,12 @@ export default function About() {
           <div className="h-32 w-px bg-gradient-to-b from-accent
           to-transparent animate-bounce mt-8"></div>
         </div>
+      </section>
+      {/* More about me and tech stack */}
+      <section className="flex flex-row container mx-auto">
+        <div className="flex flex-col"></div>
+          <h2>More About Me</h2>
+        <h2 className="">Tech Stack</h2>
       </section>
     </>
   );
