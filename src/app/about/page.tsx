@@ -1,3 +1,6 @@
+// Decidied to have a longer about page and not two seperate pages
+// Reason being that its cool to have a scroll. 
+
 export default function About() {
   return (
     <>
