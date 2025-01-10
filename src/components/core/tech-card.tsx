@@ -6,7 +6,7 @@ type TechCardProps = {
 };
 
 
-export default function techCard({tech} : TechCardProps) {
+export default function TechCard({tech} : TechCardProps) {
   return (
     <div>
       <span>{tech.name}</span>

@@ -4,7 +4,7 @@
 // Reason being that its cool to have a scroll. 
 
 import { techName } from "@/types/tech-name";
-import techCard from "@/components/core/tech-card";
+import TechCard from "@/components/core/tech-card";
 const techs: techName[] = [
   {name: "Javascript"}
 ]
@@ -35,7 +35,7 @@ export default function About() {
           <h2>More About Me</h2>
         <h2 className="">Tech Stack</h2>
           {techs.map((tech) => (
-            <techCard key={tech.name} tech={tech}></techCard>
+            <TechCard key={tech.name} tech={tech}></TechCard>
           ))}
 
 
