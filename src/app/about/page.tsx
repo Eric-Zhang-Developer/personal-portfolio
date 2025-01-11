@@ -6,7 +6,7 @@ import TechCard from "@/components/core/tech-card";
 const techs: techName[] = [
   {
     name: "Javascript",
-    iconPath: "technology-icons/javascript.png",
+    iconPath: "/technology-icons/javascript.png",
   },
 ];
 
