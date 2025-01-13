@@ -7,7 +7,7 @@ export default function Minesweeper() {
         This is an enhanced implementation of the classic Minesweeper game,
         developed in C++ using the SFML (Simple and Fast Multimedia Library)
         framework. This project was created as my Programming 2 class (COP3503)
-        final project. After completing the project to my class' specifications,
+        final project. After completing the project to my class&apos; specifications,
         I later implemented more features such as sound effects after completing
         it to the class specifications.
       </p>
