@@ -8,13 +8,11 @@ export default function Minesweeper() {
         developed in C++ using the SFML (Simple and Fast Multimedia Library)
         framework. This project was created as my Programming 2 class (COP3503)
         final project. After completing the project to my class' specifications,
-        I later implemented more features after completing it to the class
-        specifications.
+        I later implemented more features such as sound effects after completing
+        it to the class specifications.
       </p>
-      
-      <h2 className="text-xl font-semibold mt-6">
-        Features:
-      </h2>
+
+      <h2 className="text-xl font-semibold mt-6">Features:</h2>
       <ul className="list-disc list-outside ml-6 text-secondary">
         <li>Welcome window to input name</li>
         <li>Graphical user interface using SFML</li>
@@ -26,7 +24,6 @@ export default function Minesweeper() {
         <li>Leaderboard system to track best times</li>
         <li>Sound effects for various game actions</li>
       </ul>
-
     </div>
   );
 }
