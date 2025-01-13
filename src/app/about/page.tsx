@@ -4,9 +4,42 @@
 import { techName } from "@/types/tech-name";
 import TechCard from "@/components/core/tech-card";
 const techs: techName[] = [
+
+  {
+    name: "Typescript",
+    iconPath: "/technology-icons/typescript.jpg",
+  },
+  {
+    name: "React.js",
+    iconPath: "/technology-icons/react.jpg",
+  },
+  {
+    name: "Tailwind",
+    iconPath: "/technology-icons/tailwind.jpg",
+  },
+  {
+    name: "Next.js",
+    iconPath: "/technology-icons/next-js.jpeg",
+  },
+  {
+    name: "Html",
+    iconPath: "/technology-icons/html.png",
+  },
+  {
+    name: "Css",
+    iconPath: "/technology-icons/css.png",
+  },
   {
     name: "Javascript",
     iconPath: "/technology-icons/javascript.png",
+  },
+  {
+    name: "Python",
+    iconPath: "/technology-icons/python.jpg",
+  },
+  {
+    name: "C++",
+    iconPath: "/technology-icons/C++.webp",
   },
 ];
 
