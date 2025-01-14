@@ -21,7 +21,7 @@ export default function RootLayout({
         <header>
           <NavigationBar></NavigationBar>
         </header>
-        <main className="flex-1 bg-gradient-to-b from-slate-200 to-slate-500 pt-16 pb-4">{children}</main>
+        <main className="flex-1 bg-hexagon-pattern bg-slate-200 pt-16 pb-4">{children}</main>
         <footer>
           <Footer></Footer>
         </footer>
