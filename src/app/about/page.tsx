@@ -48,7 +48,7 @@ export default function About() {
       {/* Intro to about me page */}
       <section className="flex flex-col container mx-auto items-center text-primary min-h-screen">
         <h1 className="text-4xl mt-6">About Me</h1>
-        <p className="mt-2 text-secondary text-lg text-center p-4 lg:p-2">
+        <p className="mt-2 text-secondary text-xl text-center p-4 lg:p-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -67,8 +67,8 @@ export default function About() {
       {/* More about me and tech stack */}
       <section className="flex flex-row container mx-auto gap-8">
         <div className="flex flex-col w-2/3">
-          <h2 className="text-2xl">More About Me</h2>
-          <p>
+          <h2 className="text-3xl font-medium">More About Me</h2>
+          <p className="text-secondary text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
