@@ -4,7 +4,6 @@
 import { techName } from "@/types/tech-name";
 import TechCard from "@/components/core/tech-card";
 const techs: techName[] = [
-
   {
     name: "Typescript",
     iconPath: "/technology-icons/typescript.jpg",
@@ -67,12 +66,20 @@ export default function About() {
       </section>
       {/* More about me and tech stack */}
       <section className="flex flex-row container mx-auto gap-8">
-        <div className="flex flex-col">
-          <h2>More About Me</h2>
+        <div className="flex flex-col w-2/3">
+          <h2 className="text-2xl">More About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident
+          </p>
         </div>
-        <div>
-          <h2 className="">Tech Stack</h2>
-          <div className="flex flex-col">
+        <div className="flex flex-col w-1/3 items-center">
+          <h2 className="text-2xl">Tech Stack</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {techs.map((tech) => (
               <TechCard key={tech.name} tech={tech}></TechCard>
             ))}
