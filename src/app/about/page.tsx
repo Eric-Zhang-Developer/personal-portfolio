@@ -11,7 +11,7 @@ const techs: techName[] = [
   {
     name: "React.js",
     iconPath: "/technology-icons/react.png",
-    shouldAnimate: true
+    shouldAnimate: true,
   },
   {
     name: "Tailwind",
@@ -65,11 +65,24 @@ export default function About() {
           ></div>
         </div>
       </section>
+
       {/* More about me and tech stack */}
+      {/* Decided to use a side by side layout for desktop with 2/3, 
+      1/3 ratio then stack about me and tech layout on top of each other on mobile, both are clean*/}
       <section className="flex flex-col lg:flex-row container mx-auto gap-8 p-4">
         <div className="flex flex-col lg:w-2/3">
-          <h2 className="text-3xl font-medium text-center lg:text-start">More About Me</h2>
-          <p className="text-secondary text-xl text-center lg:text-start">
+          <h2 className="text-3xl font-medium text-center lg:text-start mb-6">
+            More About Me
+          </h2>
+          <p className="text-secondary text-xl text-center lg:text-start mb-6 indent-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident
+          </p>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -79,7 +92,7 @@ export default function About() {
           </p>
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
-          <h2 className="text-2xl">Tech Stack</h2>
+          <h2 className="text-3xl font-medium mb-6">Tech Stack</h2>
           <div className="grid grid-cols-2 gap-8">
             {techs.map((tech) => (
               <TechCard key={tech.name} tech={tech}></TechCard>
