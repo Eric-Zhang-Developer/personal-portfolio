@@ -3,6 +3,9 @@
 
 import { techName } from "@/types/tech-name";
 import TechCard from "@/components/core/tech-card";
+
+// Using lucide icon cause I love icons!
+import { MoveDown } from 'lucide-react';
 const techs: techName[] = [
   {
     name: "Typescript",
@@ -58,10 +61,11 @@ export default function About() {
           pariatur. Excepteur sint occaecat cupidatat non proident
         </p>
         <div className="flex items-center justify-center flex-col mt-6">
-          <span className="text-accent">Scroll</span>
+          <span className="text-accent mb-6">Scroll</span>
+          <MoveDown className="text-accent animate-bounce" size={40}></MoveDown>
           <div
-            className="h-32 w-px bg-gradient-to-b from-accent
-          to-transparent animate-bounce mt-8"
+            className="h-10 w-px bg-gradient-to-b from-accent
+          to-transparent animate-bounce mt-2"
           ></div>
         </div>
       </section>
