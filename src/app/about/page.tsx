@@ -15,7 +15,7 @@ const techs: techName[] = [
   },
   {
     name: "Tailwind",
-    iconPath: "/technology-icons/tailwind.jpg",
+    iconPath: "/technology-icons/tailwind.png",
   },
   {
     name: "Next.js",
@@ -35,7 +35,7 @@ const techs: techName[] = [
   },
   {
     name: "Python",
-    iconPath: "/technology-icons/python.jpg",
+    iconPath: "/technology-icons/python.webp",
   },
   {
     name: "C++",
