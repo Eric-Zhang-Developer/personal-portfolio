@@ -10,7 +10,8 @@ const techs: techName[] = [
   },
   {
     name: "React.js",
-    iconPath: "/technology-icons/react.jpg",
+    iconPath: "/technology-icons/react.png",
+    shouldAnimate: true
   },
   {
     name: "Tailwind",

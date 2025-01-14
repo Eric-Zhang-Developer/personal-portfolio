@@ -13,6 +13,17 @@ const config: Config = {
         primary: '#1e293b',
         secondary: '#334155',
         accent: '#3b82f6',
+      },
+      
+      // Default animation spin speed for react icon is way too fast at sec
+      keyframes: {
+        spin: {
+          'from': { transform: 'rotate(0deg)' },
+          'to': { transform: 'rotate(360deg)' },
+        }
+      },
+      animation: {
+        'spin-slow': 'spin 20s linear infinite',
       }
     },
   },
