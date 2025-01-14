@@ -11,8 +11,17 @@ type TechCardProps = {
 
 export default function TechCard({ tech }: TechCardProps) {
   return (
-    <div className="flex border-2 border-primary w-24">
-      <Image src={tech.iconPath} alt={tech.name} width={100} height={100}></Image>
+    <div
+      className="flex border-4 rounded-xl border-primary w-30 p-5
+      transition hover:border-accent hover:-translate-y-1 shadow-lg
+    bg-gradient-to-br from-slate-300 to-accent"
+    >
+      <Image
+        src={tech.iconPath}
+        alt={tech.name}
+        width={100}
+        height={100}
+      ></Image>
     </div>
   );
 }
