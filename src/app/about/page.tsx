@@ -66,10 +66,10 @@ export default function About() {
         </div>
       </section>
       {/* More about me and tech stack */}
-      <section className="flex flex-row container mx-auto gap-8">
-        <div className="flex flex-col w-2/3">
-          <h2 className="text-3xl font-medium">More About Me</h2>
-          <p className="text-secondary text-xl">
+      <section className="flex flex-col lg:flex-row container mx-auto gap-8 p-4">
+        <div className="flex flex-col lg:w-2/3">
+          <h2 className="text-3xl font-medium text-center lg:text-start">More About Me</h2>
+          <p className="text-secondary text-xl text-center lg:text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -78,9 +78,9 @@ export default function About() {
             pariatur. Excepteur sint occaecat cupidatat non proident
           </p>
         </div>
-        <div className="flex flex-col w-1/3 items-center">
+        <div className="flex flex-col lg:w-1/3 items-center">
           <h2 className="text-2xl">Tech Stack</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-8">
             {techs.map((tech) => (
               <TechCard key={tech.name} tech={tech}></TechCard>
             ))}
