@@ -5,7 +5,7 @@ import { techName } from "@/types/tech-name";
 import TechCard from "@/components/core/tech-card";
 
 // Using lucide icon cause I love icons!
-import { MoveDown } from 'lucide-react';
+import { MoveDown } from "lucide-react";
 const techs: techName[] = [
   {
     name: "Typescript",
@@ -79,20 +79,30 @@ export default function About() {
             More About Me
           </h2>
           <p className="text-secondary text-xl text-center lg:text-start mb-6 indent-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident
+            I approach software development like a blacksmith approaches their
+            craft. When I'm building applications, I see myself like a
+            blacksmith forging steel into a blade, but instead of hammer blows
+            and hot steel it&apos;s lines of code and functions. Just as a
+            blacksmith begins with a vision of the finished blade, I start with
+            a project concept that excites me. Those first lines of code are
+            like initial hammer strikes on hot steel - transforming raw
+            potential into reality. Then like how each hammer blow shapes the
+            sword, each line of code I write gradually transforms my project.
+            And just as a blacksmith expects and works through imperfections,
+            bugs and challenges are inevitable. Sometimes, the blade may even
+            shatter. Once I rewrote and refactored an entire project from
+            scratch. I had to pick up the pieces and start over again. It was
+            devastating, a dozen hours down the drain. But I persevered, never
+            gave up, and completed it. Each problem solved only further sharpens
+            my skills and leads to a more polished final product. Once I am
+            finished, there's this unmatched satisfaction of seeing my vision
+            fully realized. This is the work that I am proud to call my own.
           </p>
           <p className="text-secondary text-xl text-center lg:text-start indent-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident
+            Paragraph about my journey 
+          </p>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6">
+            Paragraph about why I chose front end for now
           </p>
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
