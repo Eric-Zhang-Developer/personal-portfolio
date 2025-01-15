@@ -80,7 +80,7 @@ export default function About() {
           </h2>
           <p className="text-secondary text-xl text-center lg:text-start mb-6 indent-6">
             I approach software development like a blacksmith approaches their
-            craft. When I'm building applications, I see myself like a
+            craft. When I&apos;m building applications, I see myself like a
             blacksmith forging steel into a blade, but instead of hammer blows
             and hot steel it&apos;s lines of code and functions. Just as a
             blacksmith begins with a vision of the finished blade, I start with
@@ -95,7 +95,7 @@ export default function About() {
             devastating, a dozen hours down the drain. But I persevered, never
             gave up, and completed it. Each problem solved only further sharpens
             my skills and leads to a more polished final product. Once I am
-            finished, there's this unmatched satisfaction of seeing my vision
+            finished, there&apos;s this unmatched satisfaction of seeing my vision
             fully realized. This is the work that I am proud to call my own.
           </p>
           <p className="text-secondary text-xl text-center lg:text-start indent-6">
