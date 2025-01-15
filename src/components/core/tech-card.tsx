@@ -14,15 +14,24 @@ export default function TechCard({ tech }: TechCardProps) {
     <div
       className="flex border-4 rounded-xl border-primary w-30 p-5 
       transition hover:border-accent hover:-translate-y-1 shadow-lg
-    bg-gradient-to-br from-slate-300 to-accent"
+    bg-gradient-to-br from-slate-300 to-accent relative group"
     >
       <Image
-        className={tech.shouldAnimate ? 'animate-spin-slow' : ''}
+        className={tech.shouldAnimate ? "animate-spin-slow" : ""}
         src={tech.iconPath}
         alt={tech.name}
         width={100}
         height={100}
       ></Image>
+
+      {/* Tooltip */}
+      <span
+        className="absolute bottom-full left-1/2 transform -translate-x-1/2 
+          mb-2 opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-3 py-2 
+          rounded-md shadow-lg transition"
+      >
+        {tech.name}
+      </span>
     </div>
   );
 }
