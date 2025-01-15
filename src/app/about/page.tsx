@@ -53,12 +53,9 @@ export default function About() {
       <section className="flex flex-col container mx-auto items-center text-primary min-h-screen">
         <h1 className="text-4xl mt-6">About Me</h1>
         <p className="mt-2 text-secondary text-xl text-center p-4 lg:p-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident
+          Hi, I am a computer Science student at the University of Florida. I
+          view programming not as a just another class to pass but as a versatile toolbox to solve
+          problems. Currently deep-diving into front end development. 
         </p>
         <div className="flex items-center justify-center flex-col mt-6">
           <span className="text-accent mb-6">Scroll</span>
@@ -95,11 +92,12 @@ export default function About() {
             devastating, a dozen hours down the drain. But I persevered, never
             gave up, and completed it. Each problem solved only further sharpens
             my skills and leads to a more polished final product. Once I am
-            finished, there&apos;s this unmatched satisfaction of seeing my vision
-            fully realized. This is the work that I am proud to call my own.
+            finished, there&apos;s this unmatched satisfaction of seeing my
+            vision fully realized. This is the work that I am proud to call my
+            own.
           </p>
           <p className="text-secondary text-xl text-center lg:text-start indent-6">
-            Paragraph about my journey 
+            Paragraph about my journey
           </p>
           <p className="text-secondary text-xl text-center lg:text-start indent-6">
             Paragraph about why I chose front end for now
