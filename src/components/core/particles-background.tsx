@@ -68,6 +68,11 @@ const ParticlesBackground = () => {
           enable: true,
           opacity: 0.5,
           width: 1,
+          triangles: {
+            enable: true,
+            color: "#3b82f6",
+            opacity: 0.1,
+          },
         },
         move: {
           direction: MoveDirection.none,
@@ -76,7 +81,7 @@ const ParticlesBackground = () => {
             default: OutMode.out,
           },
           random: false,
-          speed: 2,
+          speed: 5,
           straight: false,
         },
         number: {
