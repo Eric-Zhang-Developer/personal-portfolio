@@ -33,7 +33,7 @@ const ParticlesBackground = () => {
     () => ({
       background: {
         color: {
-          value: "#0d47a1",
+          value: "#E2E8F0",
         },
       },
       fpsLimit: 120,
@@ -53,17 +53,17 @@ const ParticlesBackground = () => {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 150,
             duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#3b82f6",
         },
         links: {
-          color: "#ffffff",
+          color: "#3b82f6",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -76,7 +76,7 @@ const ParticlesBackground = () => {
             default: OutMode.out,
           },
           random: false,
-          speed: 6,
+          speed: 2,
           straight: false,
         },
         number: {
@@ -86,13 +86,13 @@ const ParticlesBackground = () => {
           value: 80,
         },
         opacity: {
-          value: 0.5,
+          value: .75,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: 1.5,
         },
       },
       detectRetina: true,
