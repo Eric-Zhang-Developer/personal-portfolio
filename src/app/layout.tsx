@@ -2,6 +2,8 @@ import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import NavigationBar from "@/components/core/navigation-bar";
 import Footer from "@/components/core/footer";
+
+import ParticlesBackground from "@/components/core/particles-background";
 export const metadata = {
   title: "Eric Zhang",
   description: "Eric Zhang's Personal Portfolio",
@@ -21,7 +23,12 @@ export default function RootLayout({
         <header>
           <NavigationBar></NavigationBar>
         </header>
-        <main className="flex-1 bg-hexagon-pattern bg-slate-200 pt-16 pb-4">{children}</main>
+        <main className="flex-1 pt-16 pb-4 relative">
+          <div className=" absolute inset-0 -z-10">
+            <ParticlesBackground></ParticlesBackground>
+          </div>
+          {children}
+        </main>
         <footer>
           <Footer></Footer>
         </footer>
