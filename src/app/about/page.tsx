@@ -101,17 +101,25 @@ export default function About() {
             own.
           </p>
           <span className="text-primary text-2xl text-center lg:text-start">
-            My Programming Journey: 
+            My Programming <span className="text-accent">Journey</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
             
           </p>
           <span className="text-primary text-2xl text-center lg:text-start">
-            Relentless Like Water:
+            Relentless Like <span className="text-accent">Water</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
-            Paragraph about consistency
+        
           </p>
+
+          <span className="text-primary text-2xl text-center lg:text-start">
+            Lifelong Learning
+          </span>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
+        
+          </p>
+
 
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
