@@ -13,8 +13,8 @@ export default function TechCard({ tech }: TechCardProps) {
   return (
     <div
       className="flex border-4 rounded-xl border-secondary w-30 p-5 
-      transition hover:border-accent hover:-translate-y-1 shadow-lg
-    bg-gradient-to-br from-slate-300 to-accent relative group"
+      transition hover:border-accent hover:-translate-y-1 shadow-lg shadow-accent/20
+    bg-gradient-to-br from-blue-900/40 to-slate-800/50 relative group"
     >
       <Image
         className={tech.shouldAnimate ? "animate-spin-slow" : ""}
@@ -28,7 +28,7 @@ export default function TechCard({ tech }: TechCardProps) {
       <span
         className="absolute bottom-full left-1/2 transform -translate-x-1/2 
           mb-2 opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-3 py-2 
-          rounded-md shadow-lg transition"
+          rounded-md shadow-lg shadow-accent/50 hover:shadow-xl transition"
       >
         {tech.name}
       </span>
