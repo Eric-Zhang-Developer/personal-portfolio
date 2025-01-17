@@ -54,8 +54,9 @@ export default function About() {
         <h1 className="text-4xl mt-6">About Me</h1>
         <p className="mt-2 text-secondary text-xl text-center p-4 lg:p-2">
           Hi, I am a computer Science student at the University of Florida. I
-          view programming not as a just another class to pass but as a versatile toolbox to solve
-          problems. Currently deep-diving into front end development. 
+          view programming not as a just another class to pass but as a
+          versatile toolbox to solve problems. Currently deep-diving into front
+          end development.
         </p>
         <div className="flex items-center justify-center flex-col mt-6">
           <span className="text-accent mb-6">Scroll</span>
@@ -71,11 +72,14 @@ export default function About() {
       {/* Decided to use a side by side layout for desktop with 2/3, 
       1/3 ratio then stack about me and tech layout on top of each other on mobile, both are clean*/}
       <section className="flex flex-col lg:flex-row container mx-auto gap-8 p-4">
-        <div className="flex flex-col lg:w-2/3 gap-6">
-          <h2 className="text-3xl font-medium text-center lg:text-start text-primary">
+        <div className="flex flex-col lg:w-2/3 gap-2">
+          <h2 className="text-3xl font-medium text-center lg:text-start text-primary mb-6">
             More About Me
           </h2>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6">
+          <span className="text-primary text-2xl text-center lg:text-start">
+            My Philosophy to <span className="text-accent">Software Development</span>
+          </span>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
             I approach software development like a blacksmith approaches their
             craft. When I&apos;m building applications, I see myself like a
             blacksmith forging steel into a blade, but instead of hammer blows
@@ -96,12 +100,19 @@ export default function About() {
             vision fully realized. This is the work that I am proud to call my
             own.
           </p>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6">
-            Paragraph about my journey
+          <span className="text-primary text-2xl text-center lg:text-start">
+            My Programming Journey: 
+          </span>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
+            
           </p>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6">
-            Paragraph about why I chose front end for now
+          <span className="text-primary text-2xl text-center lg:text-start">
+            Relentless Like Water:
+          </span>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
+            Paragraph about consistency
           </p>
+
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
           <h2 className="text-3xl font-medium mb-6 text-primary">Tech Stack</h2>
