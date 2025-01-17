@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { Background } from "tsparticles-engine";
 
 const config: Config = {
   content: [
@@ -10,9 +11,10 @@ const config: Config = {
     extend: {
       // Using global colors for better maintainability
       colors: {
-        primary: "#1e293b",
-        secondary: "#334155",
+        primary: "#f1f5f9",
+        secondary: "#94a3b8",
         accent: "#3b82f6",
+        border: "#64748b",
       },
 
       // Default animation spin speed for react icon is way too fast at sec

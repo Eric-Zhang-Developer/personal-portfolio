@@ -3,7 +3,7 @@ import { Github, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <div
-      className="bottom-0 text-white bg-primary w-full h-10
+      className="bottom-0 text-white bg-slate-800 w-full h-10
     flex justify-center items-center"
     >
       <p className="text-sm mr-4">Copyright © 2025 Eric Zhang</p>

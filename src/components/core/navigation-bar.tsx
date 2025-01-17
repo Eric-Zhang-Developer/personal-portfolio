@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavigationBar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-primary text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-slate-800 text-white z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Home */}
