@@ -17,8 +17,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       target="_blank"
       rel="noopener noreferrer"
       className="flex flex-col items-center border-4 p-4 hover:cursor-pointer
-    gap-2 border-primary rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg
-    bg-gradient-to-br from-slate-300 to-accent"
+    gap-2 border-slate-400 rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg shadow-accent/20
+    bg-gradient-to-br from-accent to-slate-800"
     >
       <Image src={imagePath} alt={title} width={100} height={100}></Image>
       <h1 className="text-primary text-3xl ">{title}</h1>
