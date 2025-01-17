@@ -71,11 +71,11 @@ export default function About() {
       {/* Decided to use a side by side layout for desktop with 2/3, 
       1/3 ratio then stack about me and tech layout on top of each other on mobile, both are clean*/}
       <section className="flex flex-col lg:flex-row container mx-auto gap-8 p-4">
-        <div className="flex flex-col lg:w-2/3">
-          <h2 className="text-3xl font-medium text-center lg:text-start mb-6">
+        <div className="flex flex-col lg:w-2/3 gap-6">
+          <h2 className="text-3xl font-medium text-center lg:text-start text-primary">
             More About Me
           </h2>
-          <p className="text-secondary text-xl text-center lg:text-start mb-6 indent-6">
+          <p className="text-secondary text-xl text-center lg:text-start indent-6">
             I approach software development like a blacksmith approaches their
             craft. When I&apos;m building applications, I see myself like a
             blacksmith forging steel into a blade, but instead of hammer blows
@@ -104,7 +104,7 @@ export default function About() {
           </p>
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
-          <h2 className="text-3xl font-medium mb-6">Tech Stack</h2>
+          <h2 className="text-3xl font-medium mb-6 text-primary">Tech Stack</h2>
           <div className="grid grid-cols-2 gap-8">
             {techs.map((tech) => (
               <TechCard key={tech.name} tech={tech}></TechCard>
