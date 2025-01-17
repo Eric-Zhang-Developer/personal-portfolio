@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="mb-8">
         <Link
           href="/projects"
-          className="transform bg-primary text-white text-xl 
+          className="transform bg-secondary text-white text-xl 
           py-3 px-5 mr-4 rounded-lg shadow-md transition hover:shadow-xl hover:bg-accent"
         >
           View Projects
