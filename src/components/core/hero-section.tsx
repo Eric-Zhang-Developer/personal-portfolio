@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="mb-8">
         <Link
           href="/projects"
-          className="transform border-2 text-primary border-primary text-xl py-4 px-8
+          className="transform border-2 text-primary border-primary text-xl py-4 px-8 shadow-accent/30
           rounded-lg shadow-md transition hover:border-accent hover:text-accent hover:shadow-xl"
         >
           View Projects
@@ -23,7 +23,7 @@ export default function HeroSection() {
         alt="Eric Zhang"
         width={180}
         height={180}
-        className="rounded-full shadow-md border-2 border-primary transition hover:border-accent hover:shadow-lg hover:scale-105"
+        className="rounded-full shadow-md shadow-accent/30 border-2 border-primary transition hover:border-accent hover:shadow-lg hover:scale-105"
       ></Image>
     </div>
   );
