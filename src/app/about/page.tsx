@@ -79,7 +79,7 @@ export default function About() {
           <span className="text-primary text-2xl text-center lg:text-start">
             My Philosophy to <span className="text-accent">Software Development</span>
           </span>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
+          <p className="text-secondary text-md lg:text-xl text-center lg:text-start indent-6 mb-6">
             I approach software development like a blacksmith approaches their
             craft. When I&apos;m building applications, I see myself like a
             blacksmith forging steel into a blade, but instead of hammer blows
