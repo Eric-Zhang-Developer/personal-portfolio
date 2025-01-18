@@ -15,7 +15,7 @@ const projects: Project[] = [
 
   {
     title: "Tail Tales Gallery",
-    description: "AI-generated Animal Artwork Gallery Showcasing Diverse Artistic Styles",
+    description: "AI-generated Animal Artwork Gallery",
     imagePath: "/project-icons/tail-tale-gallery.jpg",
     link: "https://github.com/Eric-Zhang-Developer/Tail-Tale-Gallery",
     skills: ["React", "TypeScript", "Tailwind"]
