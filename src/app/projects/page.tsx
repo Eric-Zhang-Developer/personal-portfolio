@@ -9,7 +9,7 @@ const projects: Project[] = [
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
     imagePath: "/project-icons/personal-portfolio.png",
-    link: "/projects/personal-portfolio",
+    link: "https://github.com/Eric-Zhang-Developer/Personal-Portfolio",
     skills: ["React", "TypeScript", "Tailwind", "Next.js"]
   },
 
