@@ -53,10 +53,12 @@ export default function About() {
       <section className="flex flex-col container mx-auto items-center text-primary min-h-screen">
         <h1 className="text-4xl mt-6">About Me</h1>
         <p className="mt-2 text-secondary text-xl text-center p-4 lg:p-2">
-          Hi, I am a computer Science student at the University of Florida. I
-          view programming not as a just another class to pass but as a
-          versatile toolbox to solve problems. Currently deep-diving into front
-          end development.
+          I pursue excellence with unwavering consistency. My GitHub
+          contribution graph tells the story: pushing commits on Christmas,
+          programming on weekends, constantly building and learning. This same
+          discipline extends beyond code. My philosophy of life long
+          learning shapes everything I do. Currently focused on front-end
+          development, where each project I forge transforms vision into reality.
         </p>
         <div className="flex items-center justify-center flex-col mt-6">
           <span className="text-accent mb-6">Scroll</span>
@@ -77,7 +79,8 @@ export default function About() {
             More About Me
           </h2>
           <span className="text-primary text-2xl text-center lg:text-start">
-            My Philosophy to <span className="text-accent">Software Development</span>
+            My Philosophy to{" "}
+            <span className="text-accent">Software Development</span>
           </span>
           <p className="text-secondary text-md lg:text-xl text-center lg:text-start indent-6 mb-6">
             I approach software development like a blacksmith approaches their
@@ -103,24 +106,17 @@ export default function About() {
           <span className="text-primary text-2xl text-center lg:text-start">
             My Programming <span className="text-accent">Journey</span>
           </span>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
-            
-          </p>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
           <span className="text-primary text-2xl text-center lg:text-start">
             Relentless Like <span className="text-accent">Water</span>
+            {/*Debugging Through Fire, Coding Through Flames? This goes hard asf */}
           </span>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
-        
-          </p>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
 
           <span className="text-primary text-2xl text-center lg:text-start">
             Lifelong Learning
           </span>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6">
-        
-          </p>
-
-
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
           <h2 className="text-3xl font-medium mb-6 text-primary">Tech Stack</h2>
