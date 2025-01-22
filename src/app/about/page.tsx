@@ -109,7 +109,11 @@ export default function About() {
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
           <span className="text-primary text-2xl text-center lg:text-start">
             Relentless Like <span className="text-accent">Water</span>
-            {/*Debugging Through Fire, Coding Through Flames? This goes hard asf */}
+          </span>
+          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
+
+          <span className="text-primary text-2xl text-center lg:text-start">
+            Debugging Through <span className="text-accent">Fire</span>, Coding Through <span className="text-accent">Flames</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
 
