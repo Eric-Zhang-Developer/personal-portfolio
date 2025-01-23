@@ -109,19 +109,19 @@ export default function About() {
           <p className="text-secondary text-md lg:text-xl text-center lg:text-start indent-6 mb-6">
             When I started college, I only chose CS because it seemed like the
             safe path - good money, stable career, happy parents. Sound familiar
-            huh? It was just like those childhood piano lessons where I'd only
+            huh? It was just like those childhood piano lessons where I&apos;d only
             practice 1 hour before lessons just to get by. Competitive
             programming and leetcode were just checkboxes to land internships
             and get money. But something unexpected happened. Just like I
             randomly picked up piano again during a boring summer and lost
             myself learning River Flows in You, coding clicked when I built this
             calculator that played meme sounds. No tutorials or requirements,
-            just messing around. That's when I realized that
-            programming wasn't about the paycheck - it was about creating whatever I
-            wanted. Take this portfolio for instance. I thought I'd
+            just messing around. That&apos;s when I realized that
+            programming wasn&apos;t about the paycheck - it was about creating whatever I
+            wanted. Take this portfolio for instance. I thought I&apos;d
             just throw some pre-built components together, ship it, and call it
             a day. Ten hours tops. Welp, I spent a month straight working on it
-            every single day because it isn't just a project anymore, it's an
+            every single day because it isn&apos;t just a project anymore, it&apos;s an
             extension of who I am. Funny how things change when you find your
             own reasons to code.
           </p>
