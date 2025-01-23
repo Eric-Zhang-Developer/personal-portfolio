@@ -56,9 +56,9 @@ export default function About() {
           I pursue excellence with unwavering consistency. My GitHub
           contribution graph tells the story: pushing commits on Christmas,
           programming on weekends, constantly building and learning. This same
-          discipline extends beyond code. My philosophy of life long
-          learning shapes everything I do. Currently focused on front-end
-          development, where each project I forge transforms vision into reality.
+          discipline extends beyond code. My philosophy of life long learning
+          shapes everything I do. Currently focused on front-end development,
+          where each project I forge transforms vision into reality.
         </p>
         <div className="flex items-center justify-center flex-col mt-6">
           <span className="text-accent mb-6">Scroll</span>
@@ -106,14 +106,27 @@ export default function About() {
           <span className="text-primary text-2xl text-center lg:text-start">
             My Programming <span className="text-accent">Journey</span>
           </span>
-          <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
+          <p className="text-secondary text-md lg:text-xl text-center lg:text-start indent-6 mb-6">
+            My first real taste of coding wasn't in a classroom - it was modding
+            HOI4, adding myself as a world leader just for laughs. Still, when I
+            started CS, it felt like another checkbox on the 'good Asian kid'
+            list. The turning point? Building a calculator that blasted meme
+            sound effects. It wasn't impressive, but it was mine - no tutorials,
+            no requirements, just pure fun. Something shifted. I started seeing
+            code not as assignments to finish, but as tools to create. This
+            portfolio is proof - what started as 'let me just use some pre-built
+            components and call it a day' turned into a project I couldn't stop
+            perfecting. Funny how things change when you start coding for
+            yourself instead of others.
+          </p>
           <span className="text-primary text-2xl text-center lg:text-start">
             Relentless Like <span className="text-accent">Water</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
 
           <span className="text-primary text-2xl text-center lg:text-start">
-            Debugging Through <span className="text-accent">Fire</span>, Coding Through <span className="text-accent">Flames</span>
+            Debugging Through <span className="text-accent">Fire</span>, Coding
+            Through <span className="text-accent">Flames</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
 
