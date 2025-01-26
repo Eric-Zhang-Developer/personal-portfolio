@@ -5,4 +5,8 @@ This is my personal portfolio.
 ## Features
 - To-do
 ## Tech Stack
-- To-do
+- React.js
+- Typescript
+- Next.js
+- Tailwind
+- Tsparticles
