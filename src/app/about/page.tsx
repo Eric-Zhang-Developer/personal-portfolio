@@ -125,16 +125,18 @@ export default function About() {
             extension of who I am. Funny how things change when you find your
             own reasons to code.
           </p>
+          {/*
           <span className="text-primary text-2xl text-center lg:text-start">
             Relentless Like <span className="text-accent">Water</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
-
+          
           <span className="text-primary text-2xl text-center lg:text-start">
             Debugging Through <span className="text-accent">Fire</span>, Coding
             Through <span className="text-accent">Flames</span>
           </span>
           <p className="text-secondary text-xl text-center lg:text-start indent-6 mb-6"></p>
+          */}
         </div>
         <div className="flex flex-col lg:w-1/3 items-center">
           <h2 className="text-3xl font-medium mb-6 text-primary">Tech Stack</h2>
