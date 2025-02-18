@@ -16,3 +16,8 @@ This is my personal portfolio.
 - Tailwind
 - Tsparticles
 - Formspree
+
+## To-Do:
+- Improve SEO
+- Add landing page transition animations
+- Add accordion dropdowns on mobile for about page 
