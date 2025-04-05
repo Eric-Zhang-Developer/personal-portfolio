@@ -6,6 +6,13 @@ import ProjectCard from "@/components/core/project-card";
 
 const projects: Project[] = [
   {
+    title: "WikiType",
+    description: "Type articles, learn stuff, get faster",
+    imagePath: "/project-icons/wiki-type.png",
+    link: "https://github.com/Eric-Zhang-Developer/wiki-type",
+    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Wikipedia API"]
+  },
+  {
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
     imagePath: "/project-icons/personal-portfolio.png",
