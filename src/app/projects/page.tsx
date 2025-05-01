@@ -14,7 +14,7 @@ const projects: Project[] = [
   },
   {
     title: "TwitterTraverse",
-    description: "It's a Small World",
+    description: "Twitter Network Path Explorer",
     imagePath: "/project-icons/twitter-traverse.png",
     link: "https://github.com/Eric-Zhang-Developer/dsa-final-project",
     skills: ["React", "TypeScript", "Tailwind", "Next.js", "Python", "Flask"]
