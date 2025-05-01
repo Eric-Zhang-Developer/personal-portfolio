@@ -13,6 +13,13 @@ const projects: Project[] = [
     skills: ["React", "TypeScript", "Tailwind", "Next.js", "Wikipedia API"]
   },
   {
+    title: "TwitterTraverse",
+    description: "It's a Small World",
+    imagePath: "/project-icons/twitter-traverse.png",
+    link: "https://github.com/Eric-Zhang-Developer/dsa-final-project",
+    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Python", "Flask"]
+  },
+  {
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
     imagePath: "/project-icons/personal-portfolio.png",
