@@ -17,7 +17,7 @@ const projects: Project[] = [
     description: "Twitter Network Path Explorer",
     imagePath: "/project-icons/twitter-traverse.png",
     link: "https://github.com/Eric-Zhang-Developer/dsa-final-project",
-    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Python", "Flask"]
+    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Python", "Flask", "Graph Algorithms"]
   },
   {
     title: "Personal Portfolio",
