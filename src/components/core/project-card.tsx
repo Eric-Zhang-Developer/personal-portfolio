@@ -39,24 +39,46 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </section>
       </Link>
 
+      {/* Links to External Sites */}
       <div className="flex flex-row items-center justify-center gap-8 text-primary">
+        {/* Deployed Site */}
         <Link
           href={"https://www.google.com/"}
           prefetch={false}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2"
+          className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2 relative group"
         >
           <ExternalLink size={40}></ExternalLink>
+
+          {/* Tooltip */}
+          <span
+            className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-2
+            mb-2 opacity-0 group-hover:opacity-100 bg-slate-900/90 text-primary text-sm px-3 py-2 
+            rounded-md transition text-center whitespace-nowrap"
+          >
+            Visit App
+          </span>
         </Link>
+
+        {/* Github */}
         <Link
           href={"https://www.google.com/"}
           prefetch={false}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2"
+          className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2 relative group"
         >
           <Github size={40}></Github>
+
+          {/* Tooltip */}
+          <span
+            className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-2
+          mb-2 opacity-0 group-hover:opacity-100 bg-slate-900/90 text-primary text-sm px-3 py-2 
+          rounded-md transition text-center"
+          >
+            Github
+          </span>
         </Link>
       </div>
     </article>
