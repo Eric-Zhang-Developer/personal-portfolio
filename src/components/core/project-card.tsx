@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const { title, description, imagePath, skills, link } = project;
   return (
     <article
-      className="border-4 p-4  hover:shadow-2xl h-full gap-4 flex flex-col
+      className="border-4 p-4  hover:shadow-2xl h-full gap-2 flex flex-col pb-2
     border-secondary rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg shadow-accent/30
    bg-gradient-to-br from-blue-900/40 to-slate-800/50"
     >
@@ -39,12 +39,24 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </section>
       </Link>
 
-      <div className="flex flex-row items-center justify-center gap-8">
-        <Link href={"https://www.google.com/"}>
-          <ExternalLink></ExternalLink>
+      <div className="flex flex-row items-center justify-center gap-8 text-primary">
+        <Link
+          href={"https://www.google.com/"}
+          prefetch={false}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2"
+        >
+          <ExternalLink size={40}></ExternalLink>
         </Link>
-        <Link href={"https://www.google.com/"}>
-          <Github></Github>
+        <Link
+          href={"https://www.google.com/"}
+          prefetch={false}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2"
+        >
+          <Github size={40}></Github>
         </Link>
       </div>
     </article>
