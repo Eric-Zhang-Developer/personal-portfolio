@@ -4,4 +4,6 @@ export interface Project {
   imagePath: string;
   skills: string[];
   link: string;
+  githubLink?: string;
+  demoLink?: string;
 }
