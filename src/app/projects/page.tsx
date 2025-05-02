@@ -1,7 +1,7 @@
 import { Project } from "@/types/project";
 import ProjectCard from "@/components/core/project-card";
 
-// Decided to use a an array of projects as it centralizes and organizes my projects in 
+// Decided to use a an array of projects as it centralizes and organizes my projects in
 // one spot vs all over the place in the tsx. This makes adding new projects much easier.
 
 const projects: Project[] = [
@@ -10,23 +10,34 @@ const projects: Project[] = [
     description: "Type articles, learn stuff, get faster",
     imagePath: "/project-icons/wiki-type.png",
     link: "https://github.com/Eric-Zhang-Developer/wiki-type",
-    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Wikipedia API"]
+    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Wikipedia API"],
+    demoLink: "https://wiki-type.vercel.app/",
+    githubLink: "https://github.com/Eric-Zhang-Developer/wiki-type",
   },
   {
     title: "TwitterTraverse",
     description: "Twitter Network Path Explorer",
     imagePath: "/project-icons/twitter-traverse.png",
     link: "https://github.com/Eric-Zhang-Developer/dsa-final-project",
-    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Python", "Flask", "Graph Algorithms"],
+    skills: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Next.js",
+      "Python",
+      "Flask",
+      "Graph Algorithms",
+    ],
     demoLink: "https://twitter-traverse.vercel.app",
-    githubLink: "https://github.com/Eric-Zhang-Developer/DSA-Final-Project"
+    githubLink: "https://github.com/Eric-Zhang-Developer/DSA-Final-Project",
   },
   {
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
     imagePath: "/project-icons/personal-portfolio.png",
     link: "https://github.com/Eric-Zhang-Developer/Personal-Portfolio",
-    skills: ["React", "TypeScript", "Tailwind", "Next.js"]
+    skills: ["React", "TypeScript", "Tailwind", "Next.js"],
+    githubLink: "https://github.com/Eric-Zhang-Developer/Personal-Portfolio",
   },
 
   {
@@ -34,7 +45,8 @@ const projects: Project[] = [
     description: "AI-generated Animal Artwork Gallery",
     imagePath: "/project-icons/tail-tale-gallery.jpg",
     link: "https://github.com/Eric-Zhang-Developer/Tail-Tale-Gallery",
-    skills: ["React", "TypeScript", "Tailwind"]
+    skills: ["React", "TypeScript", "Tailwind"],
+    githubLink: "https://github.com/Eric-Zhang-Developer/Tail-Tale-Gallery",
   },
 
   {
@@ -42,8 +54,9 @@ const projects: Project[] = [
     description: "Simple To-Do List Built Using React",
     imagePath: "/project-icons/to-do-list.png",
     link: "https://github.com/Eric-Zhang-Developer/To-Do-App",
-    skills: ["React", "Javascript", "CSS"]
-
+    skills: ["React", "Javascript", "CSS"],
+    demoLink: "https://eric-zhang-developer.github.io/To-Do-App/",
+    githubLink: "https://github.com/Eric-Zhang-Developer/To-Do-App",
   },
 
   {
@@ -51,7 +64,9 @@ const projects: Project[] = [
     description: "Calculator with a Unique Twist",
     imagePath: "/project-icons/meme-calculator.webp",
     link: "https://github.com/Eric-Zhang-Developer/Web-Calculator",
-    skills: ["HTML", "CSS", "Javscript"]
+    skills: ["HTML", "CSS", "Javscript"],
+    demoLink: "https://eric-zhang-developer.github.io/Web-Calculator",
+    githubLink: "https://github.com/Eric-Zhang-Developer/Web-Calculator",
   },
 
   {
@@ -59,7 +74,9 @@ const projects: Project[] = [
     description: "Pixel Perfect Copy of Youtube's UI",
     imagePath: "/project-icons/youtube-clone.png",
     link: "https://github.com/Eric-Zhang-Developer/Youtube.com-Clone",
-    skills: ["HTML", "CSS", "Javscript"]
+    skills: ["HTML", "CSS", "Javscript"],
+    demoLink: "https://eric-zhang-developer.github.io/Youtube.com-Clone",
+    githubLink: "https://github.com/Eric-Zhang-Developer/Youtube.com-Clone",
   },
 
   {
@@ -67,7 +84,7 @@ const projects: Project[] = [
     description: "Enhanced Implementation of Classic Minesweeper",
     imagePath: "/project-icons/minesweeper.png",
     link: "/projects/minesweeper",
-    skills: ["C++", "SFML", "STL"]
+    skills: ["C++", "SFML", "STL"],
   },
 
   {
@@ -75,9 +92,8 @@ const projects: Project[] = [
     description: "Pokémon-inspired Species Tracker",
     imagePath: "/project-icons/pakudex.webp",
     link: "/projects/pakudex",
-    skills: ["Python"]
+    skills: ["Python"],
   },
-
 ];
 
 export default function Projects() {
