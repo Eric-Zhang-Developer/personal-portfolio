@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     project;
   return (
     <article
-      className="border-4 p-4  hover:shadow-2xl h-full gap-2 flex flex-col pb-2
+      className="border-4 p-4  hover:shadow-2xl h-full gap-2 flex flex-col pb-2 justify-center
     border-secondary rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg shadow-accent/30
    bg-gradient-to-br from-blue-900/40 to-slate-800/50"
     >
