@@ -1,9 +1,9 @@
 export default function Pakudex() {
   return (
-    <div className="flex flex-col justify-center text-primary p-2 container mx-auto gap-1">
-      <h1 className="text-4xl mt-6 self-center">Pakudex</h1>
+    <div className="container mx-auto flex flex-col justify-center gap-1 p-2 text-primary">
+      <h1 className="mt-6 self-center text-4xl">Pakudex</h1>
       <h2 className="text-xl font-semibold">Project Description:</h2>
-      <p className="text-secondary indent-6">
+      <p className="indent-6 text-secondary">
         Pakudex is a creature tracking system implemented in Python that allows
         users to manage and evolve their collection of Pakuri creatures. Each
         Pakuri has unique stats (attack, defense, and speed) that are calculated
@@ -13,8 +13,8 @@ export default function Pakudex() {
         Pakuri, viewing stats, evolving creatures, and sorting their collection.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6">Features:</h2>
-      <ul className="list-disc list-outside ml-6 text-secondary">
+      <h2 className="mt-6 text-xl font-semibold">Features:</h2>
+      <ul className="ml-6 list-outside list-disc text-secondary">
         <li>Customizable Pakudex capacity with input validation</li>
         <li>
           Add new Pakuri species with automatically calculated stats based on
