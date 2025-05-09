@@ -11,11 +11,7 @@ type TechCardProps = {
 
 export default function TechCard({ tech }: TechCardProps) {
   return (
-    <div
-      className="flex border-4 rounded-xl border-secondary w-30 p-5 
-      transition hover:border-accent hover:-translate-y-1 shadow-lg shadow-accent/20
-    bg-gradient-to-br from-blue-900/40 to-slate-800/50 relative group"
-    >
+    <div className="w-30 group relative flex rounded-xl border-4 border-secondary bg-gradient-to-br from-blue-900/40 to-slate-800/50 p-5 shadow-lg shadow-accent/20 transition hover:-translate-y-1 hover:border-accent">
       <Image
         className={tech.shouldAnimate ? "animate-spin-slow" : ""}
         src={tech.iconPath}
@@ -25,11 +21,7 @@ export default function TechCard({ tech }: TechCardProps) {
       ></Image>
 
       {/* Tooltip */}
-      <span
-        className="absolute bottom-full left-1/2 transform -translate-x-1/2 
-          mb-2 opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-3 py-2 
-          rounded-md shadow-lg shadow-accent/50 hover:shadow-xl transition"
-      >
+      <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 transform rounded-md bg-black px-3 py-2 text-sm text-white opacity-0 shadow-lg shadow-accent/50 transition hover:shadow-xl group-hover:opacity-100">
         {tech.name}
       </span>
     </div>

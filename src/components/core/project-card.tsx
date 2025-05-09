@@ -14,11 +14,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const { title, description, imagePath, skills, link, githubLink, demoLink } =
     project;
   return (
-    <article
-      className="border-4 p-4  hover:shadow-2xl h-full gap-2 flex flex-col pb-2 justify-center
-    border-secondary rounded-2xl transition hover:border-accent hover:-translate-y-1 shadow-lg shadow-accent/30
-   bg-gradient-to-br from-blue-900/40 to-slate-800/50"
-    >
+    <article className="flex h-full flex-col justify-center gap-2 rounded-2xl border-4 border-secondary bg-gradient-to-br from-blue-900/40 to-slate-800/50 p-4 pb-2 shadow-lg shadow-accent/30 transition hover:-translate-y-1 hover:border-accent hover:shadow-2xl">
       <Link
         href={link}
         target="_blank"
@@ -26,13 +22,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className="flex flex-col items-center gap-2 hover:cursor-pointer"
       >
         <Image src={imagePath} alt={title} width={100} height={100}></Image>
-        <h1 className="text-primary text-3xl ">{title}</h1>
-        <p className="text-secondary text-lg text-center">{description}</p>
+        <h1 className="text-3xl text-primary">{title}</h1>
+        <p className="text-center text-lg text-secondary">{description}</p>
         <section className="flex flex-row flex-wrap justify-center">
           {skills.map((skill) => (
             <span
               key={skill}
-              className="px-3 py-1 text-s text-border bg-slate-100 rounded-full m-1 inline-block border-l-8 border-2 border-accent"
+              className="text-s m-1 inline-block rounded-full border-2 border-l-8 border-accent bg-slate-100 px-3 py-1 text-border"
             >
               {skill}
             </span>
@@ -50,16 +46,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             prefetch={false}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2 relative group"
+            className="group relative p-2 transition hover:-translate-y-1 hover:rotate-3 hover:scale-110 hover:text-accent hover:shadow-sm"
           >
             <ExternalLink size={40}></ExternalLink>
 
             {/* Tooltip */}
-            <span
-              className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-2
-            mb-2 opacity-0 group-hover:opacity-100 bg-slate-900/90 text-primary text-sm px-3 py-2 
-            rounded-md transition text-center whitespace-nowrap"
-            >
+            <span className="absolute left-1/2 top-3/4 mb-2 -translate-x-1/2 translate-y-2 transform whitespace-nowrap rounded-md bg-slate-900/90 px-3 py-2 text-center text-sm text-primary opacity-0 transition group-hover:opacity-100">
               Visit App
             </span>
           </Link>
@@ -72,16 +64,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             prefetch={false}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent hover:scale-110 hover:-translate-y-1 hover:shadow-sm hover:rotate-3 transition p-2 relative group"
+            className="group relative p-2 transition hover:-translate-y-1 hover:rotate-3 hover:scale-110 hover:text-accent hover:shadow-sm"
           >
             <Github size={40}></Github>
 
             {/* Tooltip */}
-            <span
-              className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-2
-          mb-2 opacity-0 group-hover:opacity-100 bg-slate-900/90 text-primary text-sm px-3 py-2 
-          rounded-md transition text-center"
-            >
+            <span className="absolute left-1/2 top-3/4 mb-2 -translate-x-1/2 translate-y-2 transform rounded-md bg-slate-900/90 px-3 py-2 text-center text-sm text-primary opacity-0 transition group-hover:opacity-100">
               Github
             </span>
           </Link>

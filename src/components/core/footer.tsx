@@ -2,16 +2,13 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div
-      className="bottom-0 text-white bg-slate-800 w-full h-10
-    flex justify-center items-center"
-    >
-      <p className="text-sm mr-4">Copyright © 2025 Eric Zhang</p>
+    <div className="bottom-0 flex h-10 w-full items-center justify-center bg-slate-800 text-white">
+      <p className="mr-4 text-sm">Copyright © 2025 Eric Zhang</p>
       <a
         href="https://github.com/Eric-Zhang-Developer"
         target="_blank"
         rel="noopener noreferrer"
-        className="transition hover:text-accent transform hover:scale-110 mr-4"
+        className="mr-4 transform transition hover:scale-110 hover:text-accent"
       >
         <Github size={20} />
       </a>
@@ -19,7 +16,7 @@ export default function Footer() {
         href="https://www.linkedin.com/in/eric-zhang-developer/"
         target="_blank"
         rel="noopener noreferrer"
-        className="transition hover:text-accent transform hover:scale-110"
+        className="transform transition hover:scale-110 hover:text-accent"
       >
         <Linkedin size={20} />
       </a>

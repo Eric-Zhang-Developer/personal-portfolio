@@ -1,13 +1,11 @@
-// Using .npmrc with legacy-peer-deps=true for formspree as it has 
-// not been updated to React 19. Bandaid solution but potential 
-// issues should be minor in scope. 
-
+// Using .npmrc with legacy-peer-deps=true for formspree as it has
+// not been updated to React 19. Bandaid solution but potential
+// issues should be minor in scope.
 
 "use client";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Send } from "lucide-react";
-
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xkggpzbr");
@@ -17,34 +15,31 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-2 container mx-auto items-center px-6"
+      className="container mx-auto flex flex-col items-center gap-2 px-6"
     >
-      <label htmlFor="email" className="text-xl self-start">
+      <label htmlFor="email" className="self-start text-xl">
         Email Address
       </label>
       <input
         id="email"
         type="email"
         name="email"
-        className="w-full h-8 mb-2 shadow-md rounded-md p-2 bg-slate-800 shadow-accent/20"
+        className="mb-2 h-8 w-full rounded-md bg-slate-800 p-2 shadow-md shadow-accent/20"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label htmlFor="email" className="text-xl self-start ">
+      <label htmlFor="email" className="self-start text-xl">
         Message
       </label>
       <textarea
         id="message"
         name="message"
-        className="w-full h-96 shadow-md shadow-accent/20 rounded-md p-2 bg-slate-800 s"
+        className="s h-96 w-full rounded-md bg-slate-800 p-2 shadow-md shadow-accent/20"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
         type="submit"
         disabled={state.submitting}
-        className="transform bg-slate-800 text-white text-2xl mt-6
-          py-3 px-4 mr-4 rounded-lg shadow-md shadow-accent/20 flex justify-center items-center gap-2
-          transition hover:shadow-xl hover:bg-accent hover:scale-105
-          w-3/4 lg:w-2/4"
+        className="mr-4 mt-6 flex w-3/4 transform items-center justify-center gap-2 rounded-lg bg-slate-800 px-4 py-3 text-2xl text-white shadow-md shadow-accent/20 transition hover:scale-105 hover:bg-accent hover:shadow-xl lg:w-2/4"
       >
         <p>Send</p>
         <Send></Send>
