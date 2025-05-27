@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
+// Animations: 
+// Staggers each child's load by .4 sec
 const containerVariants: Variants = {
   hidden: {},
   visible: {
@@ -12,6 +14,7 @@ const containerVariants: Variants = {
   },
 };
 
+// Items slide in from the bottom
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
