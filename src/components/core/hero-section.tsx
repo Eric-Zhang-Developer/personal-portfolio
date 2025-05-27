@@ -36,7 +36,7 @@ export default function HeroSection() {
       animate="visible"
     >
       <motion.h1
-        className="text-center text-6xl font-bold text-primary"
+        className="text-center text-6xl font-bold text-primary max-w-80 sm:max-w-full"
         variants={itemVariants}
       >
         Hello, I&apos;m <span className="text-accent">Eric Zhang</span>
