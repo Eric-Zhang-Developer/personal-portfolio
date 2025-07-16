@@ -5,6 +5,15 @@ import ProjectCard from "@/components/core/project-card";
 // one spot vs all over the place in the tsx. This makes adding new projects much easier.
 
 const projects: Project[] = [
+    {
+    title: "Follow Diff",
+    description: "Privacy-First Instagram Tool To See Who Doesn't Follow You Back",
+    imagePath: "/project-icons/follow-diff.png",
+    link: "https://wiki-type.vercel.app",
+    skills: ["React", "TypeScript", "Tailwind", "Next.js", "Zod", "Jest"],
+    demoLink: "https://follow-diff-theta.vercel.app/",
+    githubLink: "https://github.com/Eric-Zhang-Developer/follow-diff",
+  },
   {
     title: "WikiType",
     description: "Type articles, learn stuff, get faster",
