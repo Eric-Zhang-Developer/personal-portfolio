@@ -7,7 +7,7 @@ import ProjectCard from "@/components/core/project-card";
 const projects: Project[] = [
     {
     title: "Follow Diff",
-    description: "Instagram Tool To See Who Doesn't Follow You Back",
+    description: "Privacy-First Instagram Tool To See Who Doesn't Follow You Back",
     imagePath: "/project-icons/follow-diff.png",
     link: "https://wiki-type.vercel.app",
     skills: ["React", "TypeScript", "Tailwind", "Next.js", "Zod", "Jest"],
