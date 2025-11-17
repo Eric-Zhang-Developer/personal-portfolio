@@ -5,13 +5,14 @@ import ProjectCard from "@/components/core/project-card";
 // one spot vs all over the place in the tsx. This makes adding new projects much easier.
 
 const projects: Project[] = [
-    {
+  {
     title: "Follow Diff",
-    description: "Privacy-First Instagram Tool To See Who Doesn't Follow You Back",
+    description:
+      "Privacy-First Instagram Tool To See Who Doesn't Follow You Back",
     imagePath: "/project-icons/follow-diff.png",
-    link: "https://wiki-type.vercel.app",
+    link: "https://followdiff.vercel.app/",
     skills: ["React", "TypeScript", "Tailwind", "Next.js", "Zod", "Jest"],
-    demoLink: "https://follow-diff-theta.vercel.app/",
+    demoLink: "https://followdiff.vercel.app/",
     githubLink: "https://github.com/Eric-Zhang-Developer/follow-diff",
   },
   {
@@ -38,15 +39,15 @@ const projects: Project[] = [
       "Graph Algorithms",
     ],
     demoLink: "https://twitter-traverse.vercel.app",
-    githubLink: "https://github.com/Eric-Zhang-Developer/DSA-Final-Project",
+    githubLink: "https://github.com/Eric-Zhang-Developer/twitter-traverse",
   },
   {
     title: "Personal Portfolio",
     description: "My Personal Portfolio",
     imagePath: "/project-icons/personal-portfolio.png",
-    link: "https://github.com/Eric-Zhang-Developer/Personal-Portfolio",
+    link: "https://github.com/Eric-Zhang-Developer/personal-portfolio",
     skills: ["React", "TypeScript", "Tailwind", "Next.js"],
-    githubLink: "https://github.com/Eric-Zhang-Developer/Personal-Portfolio",
+    githubLink: "https://github.com/Eric-Zhang-Developer/personal-portfolio",
   },
 
   {
