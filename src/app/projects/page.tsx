@@ -51,15 +51,6 @@ const projects: Project[] = [
   },
 
   {
-    title: "Tail Tales Gallery",
-    description: "AI-generated Animal Artwork Gallery",
-    imagePath: "/project-icons/tail-tale-gallery.jpg",
-    link: "https://github.com/Eric-Zhang-Developer/Tail-Tale-Gallery",
-    skills: ["React", "TypeScript", "Tailwind"],
-    githubLink: "https://github.com/Eric-Zhang-Developer/Tail-Tale-Gallery",
-  },
-
-  {
     title: "To-Do App",
     description: "Simple To-Do List Built Using React",
     imagePath: "/project-icons/to-do-list.png",
