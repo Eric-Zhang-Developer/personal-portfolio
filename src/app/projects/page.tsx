@@ -6,6 +6,24 @@ import ProjectCard from "@/components/core/project-card";
 
 const projects: Project[] = [
   {
+    title: "MealCraft",
+    description:
+      "AI-Powered Recipe Generator That Turns Fridge Photos Into Meals",
+    imagePath: "/project-icons/mealcraft.png",
+    link: "https://mealcraftai.vercel.app/",
+    skills: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Next.js",
+      "Gemini",
+      "Vitest",
+      "Playwright",
+    ],
+    demoLink: "https://mealcraftai.vercel.app/",
+    githubLink: "https://github.com/Eric-Zhang-Developer/mealcraft",
+  },
+  {
     title: "Follow Diff",
     description:
       "Privacy-First Instagram Tool To See Who Doesn't Follow You Back",
