@@ -24,6 +24,24 @@ const projects: Project[] = [
     githubLink: "https://github.com/Eric-Zhang-Developer/mealcraft",
   },
   {
+    title: "CodeQuest",
+    description:
+      "Gamified Fantasy-Themed App That Teaches Programming Through Quests",
+    imagePath: "/project-icons/code-quest.png",
+    link: "https://intro-swe-term-project.vercel.app/",
+    skills: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Next.js",
+      "Supabase",
+      "PostgreSQL",
+      "Vitest",
+    ],
+    demoLink: "https://intro-swe-term-project.vercel.app/",
+    githubLink: "https://github.com/Eric-Zhang-Developer/code-quest",
+  },
+  {
     title: "Follow Diff",
     description:
       "Privacy-First Instagram Tool To See Who Doesn't Follow You Back",
