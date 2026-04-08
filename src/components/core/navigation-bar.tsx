@@ -71,14 +71,14 @@ export default function NavigationBar() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="border-t border-dashed border-green/20 bg-terminal-bg/95 px-4 pb-4 pt-2 backdrop-blur-sm md:hidden">
+        <div className="border-t border-dashed border-matrix/20 bg-terminal-bg/95 px-4 pb-4 pt-2 backdrop-blur-sm md:hidden">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
               className={`block py-2 text-[13px] transition-opacity hover:opacity-100 ${
-                pathname === link.href ? "text-green" : "text-green/60"
+                pathname === link.href ? "text-matrix" : "text-matrix/60"
               }`}
             >
               {link.label}
@@ -87,7 +87,7 @@ export default function NavigationBar() {
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-2 inline-block border border-green px-3 py-1.5 text-[13px] text-green transition-all hover:bg-green hover:text-black"
+            className="mt-2 inline-block border border-matrix px-3 py-1.5 text-[13px] text-matrix transition-all hover:bg-matrix hover:text-black"
           >
             ./hire_me
           </Link>
