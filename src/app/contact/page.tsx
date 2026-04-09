@@ -1,33 +1,51 @@
 import ContactForm from "@/components/core/contact-form";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col items-center gap-6 text-primary">
-      <div className="mt-6 flex items-center gap-4">
-        <p className="text-4xl font-medium">Contact Me</p>
-        <Mail size={35}></Mail>
-      </div>
+    <div className="mx-auto max-w-[680px] px-4 py-10 md:px-7">
+      {/* Terminal window */}
+      <section className="terminal-window">
+        <div className="terminal-titlebar">
+          <span className="terminal-dot bg-[#ff5f56]" />
+          <span className="terminal-dot bg-[#ffbd2e]" />
+          <span className="terminal-dot bg-[#27c93f]" />
+          <span className="ml-2 text-matrix-text">~/contact/mail.sh</span>
+          <span className="ml-auto text-[11px] text-matrix-dim">
+            bash &middot; formspree
+          </span>
+        </div>
 
-      <ContactForm></ContactForm>
-      <section className="flex flex-row">
-        <a
-          href="https://github.com/Eric-Zhang-Developer"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mr-6 transform transition hover:scale-110 hover:text-accent"
-        >
-          <Github size={40} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/eric-zhang-developer/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transform transition hover:scale-110 hover:text-accent"
-        >
-          <Linkedin size={40} />
-        </a>
+        <ContactForm />
       </section>
-    </section>
+
+      {/* Social links */}
+      <div className="mt-8 space-y-2 text-[13px]">
+        <div className="flex items-center gap-2 text-matrix-dim">
+          <span className="text-matrix">$</span> echo{" "}
+          <a
+            href="https://github.com/Eric-Zhang-Developer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-matrix transition-all hover:text-white hover:drop-shadow-[0_0_8px_rgba(0,255,65,0.5)]"
+          >
+            <Github size={14} />
+            $GITHUB
+          </a>
+        </div>
+        <div className="flex items-center gap-2 text-matrix-dim">
+          <span className="text-matrix">$</span> echo{" "}
+          <a
+            href="https://www.linkedin.com/in/eric-zhang-developer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-matrix transition-all hover:text-white hover:drop-shadow-[0_0_8px_rgba(0,255,65,0.5)]"
+          >
+            <Linkedin size={14} />
+            $LINKEDIN
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }

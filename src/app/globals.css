@@ -2,17 +2,172 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Base ── */
+body {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(0, 255, 65, 0.08), transparent 60%),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(0, 255, 65, 0.05),
+      transparent 60%
+    ),
+    #0a0a0a;
+  color: #00ff41;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #00ff41;
+  color: #000;
+}
+
+/* ── Links ── */
+a {
+  color: #00ff41;
+  text-decoration: none;
+  transition: color 0.15s, text-shadow 0.15s;
+}
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #00ff41;
+}
+
+/* ── Blinking block cursor ── */
+.cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.05em;
+  background: #00ff41;
+  vertical-align: -2px;
+  margin-left: 3px;
+  animation: blink 1s steps(2) infinite;
+  box-shadow: 0 0 10px #00ff41;
+}
+
+/* ── CRT scanline overlay ── */
+.crt::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.18) 3px,
+    rgba(0, 0, 0, 0) 4px
+  );
+  mix-blend-mode: multiply;
+}
+
+.crt::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 51;
+  background: linear-gradient(rgba(0, 255, 65, 0.02), rgba(0, 255, 65, 0.02));
+  animation: flicker 3.2s infinite steps(8);
+}
+
+/* ── Scan beam ── */
+.scanbeam {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 120px;
+  pointer-events: none;
+  z-index: 49;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 255, 65, 0.06),
+    transparent
+  );
+  animation: scan 7s linear infinite;
+}
+
+/* ── Terminal window ── */
+.terminal-window {
+  border: 1px solid rgba(0, 255, 65, 0.35);
+  background: rgba(4, 14, 6, 0.72);
+  box-shadow:
+    0 0 60px rgba(0, 255, 65, 0.06),
+    inset 0 0 40px rgba(0, 255, 65, 0.03);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.terminal-window:hover {
+  border-color: rgba(0, 255, 65, 0.5);
+  box-shadow:
+    0 0 40px rgba(0, 255, 65, 0.1),
+    inset 0 0 40px rgba(0, 255, 65, 0.04);
+}
+
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px dashed rgba(0, 255, 65, 0.28);
+  font-size: 12px;
+  color: #008f11;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ── Glow hover utility ── */
+.glow-hover {
+  transition: text-shadow 0.15s, color 0.15s;
+}
+.glow-hover:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.6), 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+/* ── Smooth scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Focus styles for accessibility ── */
+:focus-visible {
+  outline: 2px solid #00ff41;
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #00ff41;
+  outline-offset: 2px;
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3);
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .crt::before,
+  .crt::after,
+  .scanbeam,
+  #matrix-canvas {
+    display: none !important;
+  }
+  .cursor {
+    opacity: 1;
   }
 }
-*/
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0f172a;
-}
-

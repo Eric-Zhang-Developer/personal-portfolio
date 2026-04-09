@@ -3,11 +3,11 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import NavigationBar from "@/components/core/navigation-bar";
 import Footer from "@/components/core/footer";
+import MatrixRain from "@/components/core/matrix-rain";
 
-import ParticlesBackground from "@/components/core/particles-background";
 export const metadata = {
   title: "Eric Zhang",
-  description: "Eric Zhang's Personal Portfolio",
+  description: "Eric Zhang — Software Developer Portfolio",
   icons: {
     icon: "/favicon.png",
   },
@@ -20,21 +20,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="crt flex min-h-screen flex-col font-mono">
+        <MatrixRain />
+        <div
+          className="scanbeam"
+          aria-hidden="true"
+        />
         <header>
-          <NavigationBar></NavigationBar>
+          <NavigationBar />
         </header>
-        <main className="relative flex-1 pb-4 pt-16">
-          <div className="absolute inset-0 -z-10">
-            <ParticlesBackground></ParticlesBackground>
-          </div>
+        <main className="relative z-[2] flex-1 pt-16">
           {children}
         </main>
         <footer>
-          <Footer></Footer>
+          <Footer />
         </footer>
-        <Analytics></Analytics>
-        <SpeedInsights></SpeedInsights>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
