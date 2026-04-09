@@ -1,9 +1,6 @@
 import { Project } from "@/types/project";
 import ProjectCard from "@/components/core/project-card";
 
-// Decided to use a an array of projects as it centralizes and organizes my projects in
-// one spot vs all over the place in the tsx. This makes adding new projects much easier.
-
 const projects: Project[] = [
   {
     title: "MealCraft",
@@ -85,7 +82,6 @@ const projects: Project[] = [
     skills: ["React", "TypeScript", "Tailwind", "Next.js"],
     githubLink: "https://github.com/Eric-Zhang-Developer/personal-portfolio",
   },
-
   {
     title: "To-Do App",
     description: "Simple To-Do List Built Using React",
@@ -95,7 +91,6 @@ const projects: Project[] = [
     demoLink: "https://eric-zhang-developer.github.io/To-Do-App/",
     githubLink: "https://github.com/Eric-Zhang-Developer/To-Do-App",
   },
-
   {
     title: "Meme Calculator",
     description: "Calculator with a Unique Twist",
@@ -105,7 +100,6 @@ const projects: Project[] = [
     demoLink: "https://eric-zhang-developer.github.io/Web-Calculator",
     githubLink: "https://github.com/Eric-Zhang-Developer/Web-Calculator",
   },
-
   {
     title: "Youtube Clone",
     description: "Pixel Perfect Copy of Youtube's UI",
@@ -115,7 +109,6 @@ const projects: Project[] = [
     demoLink: "https://eric-zhang-developer.github.io/Youtube.com-Clone",
     githubLink: "https://github.com/Eric-Zhang-Developer/Youtube.com-Clone",
   },
-
   {
     title: "Minesweeper",
     description: "Enhanced Implementation of Classic Minesweeper",
@@ -123,7 +116,6 @@ const projects: Project[] = [
     link: "/projects/minesweeper",
     skills: ["C++", "SFML", "STL"],
   },
-
   {
     title: "Pakudex",
     description: "Pokémon-inspired Species Tracker",
@@ -135,13 +127,23 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section className="container mx-auto flex flex-col items-center justify-center px-4">
-      <h1 className="mt-6 text-4xl text-primary">My Projects</h1>
-      <section className="mt-6 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto max-w-[980px] px-4 py-10 md:px-7">
+      {/* Section header */}
+      <div className="mb-8">
+        <h1 className="text-[15px] font-bold uppercase tracking-wider text-amber">
+          <span className="text-matrix-dim">{"// "}</span>ls ~/projects/
+        </h1>
+        <p className="mt-2 text-[13px] text-matrix-dim">
+          <span className="text-matrix">$</span> found {projects.length} entries
+        </p>
+      </div>
+
+      {/* Project grid */}
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
-      </section>
-    </section>
+      </div>
+    </div>
   );
 }
