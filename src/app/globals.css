@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Base ── */
 body {
   font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
   background:
@@ -14,25 +15,26 @@ body {
     #0a0a0a;
   color: #00ff41;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-/* Selection */
 ::selection {
   background: #00ff41;
   color: #000;
 }
 
-/* Links */
+/* ── Links ── */
 a {
   color: #00ff41;
   text-decoration: none;
+  transition: color 0.15s, text-shadow 0.15s;
 }
 a:hover {
   color: #fff;
   text-shadow: 0 0 8px #00ff41;
 }
 
-/* Blinking block cursor utility */
+/* ── Blinking block cursor ── */
 .cursor {
   display: inline-block;
   width: 0.55em;
@@ -44,7 +46,7 @@ a:hover {
   box-shadow: 0 0 10px #00ff41;
 }
 
-/* CRT scanline overlay */
+/* ── CRT scanline overlay ── */
 .crt::before {
   content: "";
   position: fixed;
@@ -71,7 +73,7 @@ a:hover {
   animation: flicker 3.2s infinite steps(8);
 }
 
-/* Scan beam */
+/* ── Scan beam ── */
 .scanbeam {
   position: fixed;
   left: 0;
@@ -88,13 +90,21 @@ a:hover {
   animation: scan 7s linear infinite;
 }
 
-/* Terminal window shared styles */
+/* ── Terminal window ── */
 .terminal-window {
   border: 1px solid rgba(0, 255, 65, 0.35);
   background: rgba(4, 14, 6, 0.72);
   box-shadow:
     0 0 60px rgba(0, 255, 65, 0.06),
     inset 0 0 40px rgba(0, 255, 65, 0.03);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.terminal-window:hover {
+  border-color: rgba(0, 255, 65, 0.5);
+  box-shadow:
+    0 0 40px rgba(0, 255, 65, 0.1),
+    inset 0 0 40px rgba(0, 255, 65, 0.04);
 }
 
 .terminal-titlebar {
@@ -112,13 +122,44 @@ a:hover {
   height: 10px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
 }
 
-/* Reduced motion */
+/* ── Glow hover utility ── */
+.glow-hover {
+  transition: text-shadow 0.15s, color 0.15s;
+}
+.glow-hover:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.6), 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+/* ── Smooth scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Focus styles for accessibility ── */
+:focus-visible {
+  outline: 2px solid #00ff41;
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #00ff41;
+  outline-offset: 2px;
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3);
+}
+
+/* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
     transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
   }
   .crt::before,
   .crt::after,
