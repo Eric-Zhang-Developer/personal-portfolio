@@ -1,7 +1,7 @@
 import ContactForm from "@/components/core/contact-form";
 import { Github, Linkedin } from "lucide-react";
 
-export default function Contact() {
+export default function Email() {
   return (
     <div className="mx-auto max-w-[680px] px-4 py-10 md:px-7">
       {/* Terminal window */}
