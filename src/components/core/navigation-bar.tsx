@@ -11,7 +11,6 @@ export default function NavigationBar() {
   const links = [
     { href: "/about", label: "~/about" },
     { href: "/projects", label: "~/projects" },
-    { href: "/contact", label: "~/contact" },
   ];
 
   return (
@@ -44,7 +43,7 @@ export default function NavigationBar() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/hire-me"
             className="border border-matrix px-3 py-1.5 text-[13px] text-matrix shadow-[inset_0_0_18px_rgba(0,255,65,0.08)] transition-all hover:bg-matrix hover:text-black hover:shadow-[0_0_24px_rgba(0,255,65,0.5)]"
           >
             ./hire_me
@@ -85,7 +84,7 @@ export default function NavigationBar() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/hire-me"
             onClick={() => setMenuOpen(false)}
             className="mt-2 inline-block border border-matrix px-3 py-1.5 text-[13px] text-matrix transition-all hover:bg-matrix hover:text-black"
           >
