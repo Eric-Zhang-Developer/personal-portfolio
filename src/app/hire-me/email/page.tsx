@@ -10,7 +10,7 @@ export default function Email() {
           <span className="terminal-dot bg-[#ff5f56]" />
           <span className="terminal-dot bg-[#ffbd2e]" />
           <span className="terminal-dot bg-[#27c93f]" />
-          <span className="ml-2 text-matrix-text">~/contact/mail.sh</span>
+          <span className="ml-2 text-matrix-text">~/hire-me/mail.sh</span>
           <span className="ml-auto text-[11px] text-matrix-dim">
             bash &middot; formspree
           </span>
