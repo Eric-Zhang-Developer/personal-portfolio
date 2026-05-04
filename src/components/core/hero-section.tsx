@@ -6,9 +6,15 @@ import { useRouter } from "next/navigation";
 /* ── boot sequence lines ── */
 const bootLines = [
   { text: "[  OK  ] booting ericzhang.dev kernel v2.0", cls: "text-matrix" },
-  { text: "[ INFO ] loading skills... [React, TypeScript, Next.js, Tailwind]", cls: "text-matrix-dim" },
+  {
+    text: "[ INFO ] loading skills... [React, TypeScript, Next.js, Tailwind]",
+    cls: "text-matrix-dim",
+  },
   { text: "[ ████████████████████████ ] 100%", cls: "text-matrix" },
-  { text: "[ INFO ] initializing projects... 11 found", cls: "text-matrix-dim" },
+  {
+    text: "[ INFO ] initializing projects... 11 found",
+    cls: "text-matrix-dim",
+  },
   { text: "[  OK  ] compiling portfolio.v2 ... done", cls: "text-matrix" },
   { text: "[ WARN ] sleep not found — proceeding anyway", cls: "text-amber" },
   { text: "[  OK  ] READY.", cls: "text-matrix" },
@@ -33,7 +39,7 @@ const asciiBig = `
 const prompts = [
   "cd ~/about",
   "ls ~/projects",
-  "cat contact.md",
+  "cat hire-me.md",
   "./resume.pdf",
 ];
 
@@ -41,14 +47,16 @@ const prompts = [
 const commands: { label: string; display: string; route: string }[] = [
   { label: "cd ~/about", display: "cd", route: "/about" },
   { label: "ls ~/projects", display: "ls", route: "/projects" },
-  { label: "cat contact.md", display: "cat", route: "/contact" },
+  { label: "cat hire-me.md", display: "cat", route: "/hire-me" },
 ];
 
 export default function HeroSection() {
   const router = useRouter();
 
   /* state */
-  const [bootRendered, setBootRendered] = useState<{ text: string; cls: string }[]>([]);
+  const [bootRendered, setBootRendered] = useState<
+    { text: string; cls: string }[]
+  >([]);
   const [titleVisible, setTitleVisible] = useState(false);
   const [subtitleVisible, setSubtitleVisible] = useState(false);
   const [promptVisible, setPromptVisible] = useState(false);
@@ -59,7 +67,9 @@ export default function HeroSection() {
   const reducedMotion = useRef(false);
 
   useEffect(() => {
-    reducedMotion.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    reducedMotion.current = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
 
     if (reducedMotion.current) {
       setBootRendered(bootLines);
@@ -128,7 +138,9 @@ export default function HeroSection() {
     }
 
     cycle();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [promptVisible]);
 
   /* periodic glitch */
@@ -152,7 +164,7 @@ export default function HeroSection() {
       .map((c) =>
         c !== " " && c !== "\n" && Math.random() < 0.06
           ? chars[Math.floor(Math.random() * chars.length)]
-          : c
+          : c,
       )
       .join("");
   };
@@ -161,10 +173,7 @@ export default function HeroSection() {
     <section className="flex min-h-[calc(100vh-56px)] flex-col justify-center px-4 py-10 md:px-7">
       <div className="mx-auto w-full max-w-[760px]">
         {/* ── Boot sequence ── */}
-        <div
-          className="mb-8 min-h-[160px] text-sm"
-          aria-live="polite"
-        >
+        <div className="mb-8 min-h-[160px] text-sm" aria-live="polite">
           {bootRendered.map((line, i) => (
             <span key={i} className={`block whitespace-pre ${line.cls}`}>
               {line.text}
@@ -178,7 +187,7 @@ export default function HeroSection() {
           <pre
             ref={asciiRef}
             aria-hidden="true"
-            className={`inline-block text-left text-[clamp(5px,0.95vw,12px)] leading-[1.05] text-matrix transition-all duration-600 ${
+            className={`duration-600 inline-block text-left text-[clamp(5px,0.95vw,12px)] leading-[1.05] text-matrix transition-all ${
               glitching ? "animate-glitch" : ""
             } ${
               titleVisible
@@ -186,7 +195,8 @@ export default function HeroSection() {
                 : "translate-y-2 opacity-0"
             } hidden md:inline-block`}
             style={{
-              textShadow: "0 0 8px rgba(0,255,65,0.55), 0 0 22px rgba(0,255,65,0.25)",
+              textShadow:
+                "0 0 8px rgba(0,255,65,0.55), 0 0 22px rgba(0,255,65,0.25)",
               letterSpacing: 0,
             }}
           >
@@ -255,7 +265,10 @@ export default function HeroSection() {
                   onClick={() => router.push(cmd.route)}
                   className="border border-dashed border-matrix/45 bg-transparent px-3 py-2 font-mono text-[13px] text-matrix transition-all hover:border-solid hover:bg-matrix hover:text-black hover:shadow-[0_0_18px_rgba(0,255,65,0.5)]"
                 >
-                  {cmd.display} <span className="text-amber">{cmd.label.replace(cmd.display + " ", "")}</span>
+                  {cmd.display}{" "}
+                  <span className="text-amber">
+                    {cmd.label.replace(cmd.display + " ", "")}
+                  </span>
                 </button>
               ))}
             </div>
